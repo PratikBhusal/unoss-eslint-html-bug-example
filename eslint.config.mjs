@@ -1,5 +1,6 @@
 import html from "@html-eslint/eslint-plugin";
 import { defineConfig, globalIgnores } from "eslint/config";
+import unocss from "@unocss/eslint-config/flat";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
 
@@ -8,6 +9,7 @@ export default defineConfig([
   {
     files: ["**/*.html"],
     plugins: {
+      unocss,
       html,
     },
     extends: ["html/recommended"],

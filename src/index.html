@@ -6,6 +6,14 @@
     <link href="index.css" rel="stylesheet" />
     <title>Index</title>
   </head>
+  <!-- Eslint Should give a conflicting warning message about -->
+  <!-- `bg-black` and `bg-blue-100` and that `text-white` -->
+  <!-- should come after `bg-black` and `bg-blue-400` -->
+  <body class="text-white bg-black bg-blue-400">
+    Hello World
+  </body>
+
+  <!-- Fixed version -->
   <body class="bg-black text-white">
     Hello World
   </body>
